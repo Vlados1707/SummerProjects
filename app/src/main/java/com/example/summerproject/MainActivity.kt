@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         return (if(User1.name.length in 1..50 && User1.weight in 1.0..250.0 && User1.height in 1..250 && User1.age in 1..150){
             return textView?.setText("Ответ: $value")!!
         } else{
-            textView?.setText("?????")
+            textView?.setText("Данные введены некорректно.")
         })!!
     }
 }
